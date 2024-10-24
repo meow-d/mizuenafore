@@ -605,6 +605,7 @@ export default {
   themePitchBlack: 'Pitch Black',
   themeDarkGrayscale: 'Dark Grayscale',
   themeCohostLight: 'Cohost Light',
+  themeMizuena: 'Mizuena',
   // Polls
   voteOnPoll: 'Vote on poll',
   pollChoices: 'Poll choices',

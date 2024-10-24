@@ -118,6 +118,12 @@ const themes = [
     label: 'intl.themeCohostLight',
     dark: false,
     color: '#83254F'
+  },
+  {
+    name: 'mizuena',
+    label: 'intl.themeMizuena',
+    dark: false,
+    color: 'hotpink'
   }
 ]
 

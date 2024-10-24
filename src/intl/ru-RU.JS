@@ -549,6 +549,7 @@ export default {
   themeMastodon: 'Mastodon',
   themePitchBlack: 'Pitch Black',
   themeDarkGrayscale: 'Dark Grayscale',
+  themeMizuena: 'Mizuena',
   // Polls
   voteOnPoll: 'Голосовать в опросе',
   pollChoices: 'Варианты опроса',
