@@ -550,6 +550,7 @@ export default {
   themePitchBlack: 'Pitch Black',
   themeDarkGrayscale: 'Dark Grayscale',
   themeMizuena: 'Mizuena',
+  themeEnamizu: 'Enamizu',
   // Polls
   voteOnPoll: 'Голосовать в опросе',
   pollChoices: 'Варианты опроса',

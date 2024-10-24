@@ -606,6 +606,7 @@ export default {
   themeDarkGrayscale: 'Dark Grayscale',
   themeCohostLight: 'Cohost Light',
   themeMizuena: 'Mizuena',
+  themeEnamizu: 'Enamizu',
   // Polls
   voteOnPoll: 'Vote on poll',
   pollChoices: 'Poll choices',

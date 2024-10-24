@@ -1,0 +1,35 @@
+@use 'sass:color';
+
+$main-theme-color: #7D5E64;
+$body-bg-color: lighten($main-theme-color, 25%);
+$anchor-color: $main-theme-color;
+$main-text-color: #333;
+$border-color: #dadada;
+$main-bg-color: white;
+$secondary-text-color: white;
+$toast-border: #fafafa;
+$toast-bg: #333;
+$focus-outline: lighten($main-theme-color, 15%);
+$compose-background: lighten($main-theme-color, 17%);
+
+// override scrollbar color to improve contrast
+$scrollbar-face: #{lighten($main-theme-color, 12%)};
+
+@import "_base.scss";
+@import "_light_scrollbars.scss";
+
+:root {
+  accent-color: #{darken($main-theme-color, 5%)};
+  --nav-bg: #{color.change($main-theme-color, $alpha: 80%)};
+}
+
+body {
+  background-repeat: repeat;
+  // TODO darker fanart
+  background: url(./115825889_p1_master1200_mizuena_近衛.jpg);
+  background-size: 400px;
+}
+
+.main-nav {
+  backdrop-filter: blur(10px);
+}

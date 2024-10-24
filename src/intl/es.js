@@ -556,6 +556,7 @@ export default {
   themePitchBlack: 'Tono negro',
   themeDarkGrayscale: 'Escala de gris oscuro',
   themeMizuena: 'Mizuena',
+  themeEnamizu: 'Enamizu',
   // Polls
   voteOnPoll: 'Votar en encuesta',
   pollChoices: 'Opciones de la encuesta',

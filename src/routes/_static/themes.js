@@ -124,6 +124,12 @@ const themes = [
     label: 'intl.themeMizuena',
     dark: false,
     color: 'hotpink'
+  },
+  {
+    name: 'enamizu',
+    label: 'intl.themeEnamizu',
+    dark: true,
+    color: '#7D5E64'
   }
 ]
 
