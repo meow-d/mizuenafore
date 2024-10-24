@@ -3,7 +3,7 @@ const prefersDarkTheme = process.env.BROWSER && matchMedia('(prefers-color-schem
 const meta = process.env.BROWSER && document.getElementById('theThemeColor')
 
 export const DEFAULT_LIGHT_THEME = 'mizuena' // theme that is shown by default
-export const DEFAULT_DARK_THEME = 'ozark' // theme that is shown for prefers-color-scheme:dark
+export const DEFAULT_DARK_THEME = 'enamizu' // theme that is shown for prefers-color-scheme:dark
 export const DEFAULT_THEME = prefersDarkTheme ? DEFAULT_DARK_THEME : DEFAULT_LIGHT_THEME
 const THEME_COLORS = process.env.THEME_COLORS ? process.env.THEME_COLORS : Object.fromEntries(themes.map(_ => ([_.name, _.color])))
 
