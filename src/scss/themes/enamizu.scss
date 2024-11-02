@@ -20,7 +20,7 @@ $scrollbar-face: #{lighten($main-theme-color, 12%)};
 
 :root {
   accent-color: #{darken($main-theme-color, 5%)};
-  --nav-bg: #{color.change($main-theme-color, $alpha: 80%)};
+  --nav-bg: #{transparentize($main-theme-color, 0.20)};
 }
 
 body {
