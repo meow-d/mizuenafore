@@ -30,7 +30,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '20.x'
-        cache: 'pnpm'  
+        cache: 'pnpm'
     - run: pnpm install --frozen-lockfile
     - run: pnpm build
     - run: cp __sapper__/export/service-worker-index.html __sapper__/export/404.html
