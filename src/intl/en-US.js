@@ -359,12 +359,12 @@ export default {
   </p>
 
   <p>
-    Enafore is a static site hosted on Github Pages. All data is stored locally in your browser and shared with the fediverse
+    Mizuenafore is a static site hosted on Vercel. All data is stored locally in your browser and shared with the fediverse
     instance(s) you connect to.
   </p>
 
   <p>
-    Approximately once per day Enafore will send a request proxied through your instance so I can collect some general statistics. No personal information is sent, only your instance domain is visible.
+    Approximately once per day Enafore will send a request proxied through your instance so I<sup>[<a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions">who?</a>]</sup> can collect some general statistics. No personal information is sent, only your instance domain is visible.
   </p>
 
   <p>
