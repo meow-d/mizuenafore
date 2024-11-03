@@ -344,16 +344,16 @@ export default {
   verified: 'Verified',
   // About page
   about: 'About',
-  aboutApp: 'About Enafore',
+  aboutApp: 'About Mizuenafore',
   aboutAppDescription: `
   <p>
-    Enafore is <a rel="noopener" target="_blank" href="https://github.com/enafore/enafore">open-source</a> software.
+    Mizuenafore is an instance of Enafore, an <a rel="noopener" target="_blank" href="https://github.com/enafore/enafore">open-source</a> software, with <a href="https://github.com/meow-d/mizuenafore">minor changes</a>.
   </p>
 
   <h2 id="privacy-policy">Privacy Policy</h2>
 
   <p>
-    Enafore does not store any personal information on its servers,
+    Mizuenafore does not store any personal information on its servers,
     including but not limited to names, email addresses,
     IP addresses, posts, and photos.
   </p>
@@ -364,7 +364,7 @@ export default {
   </p>
 
   <p>
-    Approximately once per day Enafore will send a request proxied through your instance so I<sup>[<a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions">who?</a>]</sup> can collect some general statistics. No personal information is sent, only your instance domain is visible.
+    Approximately once per day Mizuenafore will send a request proxied through your instance so I<sup>[<a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions">who?</a>]</sup> can collect some general statistics. No personal information is sent, only your instance domain is visible.
   </p>
 
   <p>
