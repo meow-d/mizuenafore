@@ -15,13 +15,15 @@
         !!($isUserLoggedIn && !settingsPage && $currentInstance)
       ),
       title: ({ showInstanceName, $currentInstance, $hasNotifications, $numberOfNotifications, name }) => {
+        const isElectron = typeof window !== 'undefined' && window.navigator.userAgent.indexOf('Electron') >= 0
         return formatIntl('intl.pageTitle', {
           showInstanceName,
+          showAppName: isElectron,
           instanceName: $currentInstance,
           hasNotifications: $hasNotifications,
           count: $numberOfNotifications,
           name,
-          appName: process.env.UPSTREAM ? 'Enafore' : process.env.BROWSER ? location.hostname : ''
+          appName: isElectron ? 'Enafore Electron' : process.env.UPSTREAM ? 'Enafore' : process.env.BROWSER ? location.hostname : 'Enafore'
         })
       }
     }
