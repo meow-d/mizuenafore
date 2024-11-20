@@ -24,8 +24,21 @@
   },
   "build": {
     "appId": "social.enafore",
+    "win": {
+      "target": [
+        "msi"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    },
     "mac": {
-      "category": "public.app-category.social-networking"
+      "category": "public.app-category.social-networking",
+      "target": [
+        "dmg"
+      ]
     }
   },
   "dependencies": {
