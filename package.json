@@ -18,7 +18,15 @@
     "build-lodash": "rollup -c ./src/routes/_thirdparty/lodash/rollup.config.js",
     "build-webpack-config": "rollup -c ./webpack/rollup.config.js",
     "sapper-export": "cross-env PORT=22939 WEBPACK_CONFIG_FILE=webpack/webpack.config.cjs SERVER_FILE_EXT=cjs node ./node_modules/sapper/sapper export",
-    "electron-start": "run-s build-steps && electron ."
+    "electron-start": "run-s build-steps && electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
+  },
+  "build": {
+    "appId": "social.enafore",
+    "mac": {
+      "category": "public.app-category.social-networking"
+    }
   },
   "dependencies": {
     "@easrng/elements": "^0.1.9",
@@ -145,12 +153,14 @@
     "url": "https://github.com/enafore/enafore/issues"
   },
   "homepage": "https://github.com/enafore/enafore#readme",
-  "description": "Hello World!",
+  "name": "enafore",
+  "description": " A somewhat unstable fediverse client with better support for Akkoma and glitch-soc instances.",
+  "version": "0.0.0",
   "pre-commit": "lint",
   "main": "src/electron.js",
   "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74",
   "devDependencies": {
-    "@electron-forge/cli": "^7.5.0",
-    "electron": "^33.2.0"
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
   }
 }
