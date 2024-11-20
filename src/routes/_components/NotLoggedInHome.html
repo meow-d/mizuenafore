@@ -71,7 +71,7 @@
     },
     data: () => {
       return {
-        appName: process.env.UPSTREAM ? 'Enafore' : process.env.BROWSER ? location.hostname : '',
+        appName: typeof window !== 'undefined' && window.navigator.userAgent.indexOf('Electron') >= 0 ? 'Enafore Electron' : process.env.UPSTREAM ? 'Enafore' : process.env.BROWSER ? location.hostname : 'Enafore',
         singleInstance: process.env.SINGLE_INSTANCE
       }
     },

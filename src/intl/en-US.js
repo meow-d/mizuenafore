@@ -181,7 +181,13 @@ export default {
     {name}
     ·
     {showInstanceName, select,
-      true {{instanceName}}
+      true {
+        {instanceName}
+        {showAppName, select,
+          true { · {appName}}
+          other {}
+        }
+      }
       other {{appName}}
     }
   `,
