@@ -6,12 +6,23 @@ const SCOPES = 'read write follow push'
 
 export function registerApplication (instanceName, redirectUri) {
   const url = `${basename(instanceName)}/api/v1/apps`
-  return post(url, {
-    client_name: process.env.UPSTREAM ? 'Enafore' : process.env.BROWSER ? location.hostname : 'Enafore',
-    redirect_uris: redirectUri,
-    scopes: SCOPES,
-    website: process.env.BROWSER ? location.origin : WEBSITE
-  }, null, { timeout: WRITE_TIMEOUT })
+
+  const isElectron =
+    typeof window !== 'undefined' &&
+    window.navigator.userAgent.indexOf('Electron') >= 0
+  const clientName = isElectron ? 'Enafore Electron' : process.env.UPSTREAM ? 'Enafore' : process.env.BROWSER ? location.hostname : 'Enafore'
+
+  return post(
+    url,
+    {
+      client_name: clientName,
+      redirect_uris: redirectUri,
+      scopes: SCOPES,
+      website: process.env.BROWSER ? location.origin : WEBSITE
+    },
+    null,
+    { timeout: WRITE_TIMEOUT }
+  )
 }
 
 export function generateAuthLink (instanceName, clientId, redirectUri) {
