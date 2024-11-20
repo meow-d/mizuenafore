@@ -1,6 +1,7 @@
 .DS_Store
 /node_modules
 /__sapper__
+/dist
 /mastodon
 /mastodon.log
 /src/template.html
