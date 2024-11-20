@@ -17,7 +17,8 @@
     "build-assets": "node ./bin/build-assets.js",
     "build-lodash": "rollup -c ./src/routes/_thirdparty/lodash/rollup.config.js",
     "build-webpack-config": "rollup -c ./webpack/rollup.config.js",
-    "sapper-export": "cross-env PORT=22939 WEBPACK_CONFIG_FILE=webpack/webpack.config.cjs SERVER_FILE_EXT=cjs node ./node_modules/sapper/sapper export"
+    "sapper-export": "cross-env PORT=22939 WEBPACK_CONFIG_FILE=webpack/webpack.config.cjs SERVER_FILE_EXT=cjs node ./node_modules/sapper/sapper export",
+    "electron-start": "run-s build-steps && electron ."
   },
   "dependencies": {
     "@easrng/elements": "^0.1.9",
@@ -144,6 +145,12 @@
     "url": "https://github.com/enafore/enafore/issues"
   },
   "homepage": "https://github.com/enafore/enafore#readme",
+  "description": "Hello World!",
   "pre-commit": "lint",
-  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74"
+  "main": "src/electron.js",
+  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.5.0",
+    "electron": "^33.2.0"
+  }
 }
