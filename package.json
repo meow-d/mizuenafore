@@ -24,11 +24,6 @@
   },
   "build": {
     "appId": "social.enafore",
-    "win": {
-      "target": [
-        "msi"
-      ]
-    },
     "linux": {
       "target": [
         "AppImage"
